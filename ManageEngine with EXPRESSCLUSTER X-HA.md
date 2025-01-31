@@ -1,4 +1,4 @@
-### Quick Start Guide: High Availability for ManageEngine ServiceDesk using EXPRESSCLUSTER
+### Quick Start Guide: High Availability for ManageEngine ServiceDesk using EXPRESSCLUSTER X
 
 > **Table of Contents**
 > 
@@ -32,14 +32,14 @@ Before beginning, ensure that the system meets the following requirements:
 ### Minimum Requirements for ManageEngine
 Refer to the official documentation: [ManageEngine System Requirements](https://help.servicedeskplus.com/installing-servicedesk-plus#)
 
-### System Requirements for EXPRESSCLUSTER on Windows
+### System Requirements for EXPRESSCLUSTER X on Windows
 Refer to the official documentation: [EXPRESSCLUSTER System Requirements](https://www.nec.com/en/global/prod/expresscluster/en/sysreq/os_win.html)
 
 ## Installation Steps
 ### Install ManageEngine ServiceDesk
 Follow the official installation guide: [ManageEngine Installation](https://help.servicedeskplus.com/installing-servicedesk-plus#)
 
-### Install EXPRESSCLUSTER
+### Install EXPRESSCLUSTER X
 Follow the official installation guide: [EXPRESSCLUSTER Installation](https://docs.nec.co.jp/software/clustering/expresscluster_x/x52/ecx_x52_windows_en/W52_IG_EN/W_IG.html#installing-expresscluster)
 
 ### Cluster System Configuration
@@ -98,7 +98,7 @@ Set up a basic cluster with Mirror Disk and FIP resources by following this guid
    - Start ManageEngine on the secondary server using `run.bat`.
    - Stop the service using `shutdown.bat`.
 
-5. **Add Application Resource to EXPRESSCLUSTER**
+5. **Add Application Resource to EXPRESSCLUSTER X**
    - Open Cluster Manager and switch to configuration mode.
    - Add a Failover Resource:
      - Name: `ME-services` (or any preferred name)
