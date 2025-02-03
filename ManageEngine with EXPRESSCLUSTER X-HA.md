@@ -77,7 +77,7 @@ Set up a basic cluster with Mirror Disk and FIP resources by following this guid
 1. **Initial Setup on Primary Server**
    - Start the ManageEngine service.
    - Access the application at `https://localhost:8080`.
-   - Change the administrator password.
+   - Change the administrator password of the ManageEngine service with ME Webconsole.
    - Stop the service from Windows Services and set it to manual mode.
 
 2. **Move the Database to Mirror Disk (E:/ Drive)**
@@ -94,11 +94,12 @@ Set up a basic cluster with Mirror Disk and FIP resources by following this guid
    - Ensure the database path modification (`set DB_HOME="E:\pgsql"`) is applied on the secondary server.
 
 4. **Failover Testing**
-   - Use Cluster Manager to failover the group to the secondary server.
+   - Stop the ManageEngine service by running `shutdown.bat` from `C:\Program Files\ManageEngine\ServiceDeskPlus-MSP\bin` on the primary server.
+   - Use Cluster Manager to failover the group from the primary server to the secondary server.
    - Start ManageEngine on the secondary server using `run.bat`.
    - Stop the service using `shutdown.bat`.
 
-5. **Add Application Resource to EXPRESSCLUSTER X**
+6. **Add Application Resource to EXPRESSCLUSTER X**
    - Open Cluster Manager and switch to configuration mode.
    - Add a Failover Resource:
      - Name: `ME-services` (or any preferred name)
@@ -110,7 +111,7 @@ Set up a basic cluster with Mirror Disk and FIP resources by following this guid
    - Apply the configuration and return to operation mode.
    - Start the `ME-services` application resource.
 
-6. **Adding Process Name Monitor**
+7. **Adding Process Name Monitor**
    - Open Cluster Manager and switch to configuration mode.
    - Add a new monitor resource: **Process Name Monitor**.
    - In the **Monitor Common** tab:
@@ -124,7 +125,7 @@ Set up a basic cluster with Mirror Disk and FIP resources by following this guid
      - Set **Final Action** to `No Operation`.
    - Apply the settings and finish.
 
-7. **Adding PostgreSQL Monitor**
+8. **Adding PostgreSQL Monitor**
    - Open Cluster Manager and switch to configuration mode.
    - Add a new monitor resource: **PostgreSQL Monitor**.
    - In the **Monitor Common** tab:
@@ -142,8 +143,8 @@ Set up a basic cluster with Mirror Disk and FIP resources by following this guid
      - Set **Recovery Target** to `ME-services`.
    - Apply the settings and finish.
 
-8. **Failover testing**
+9. **Failover testing**
    - Open Manage engine webconsole using FIP address
-   - Create a new ticket on active server(where the failover is running).
+   - Create a new ticket on active server(where the failover group is running).
    - Failover the failover group to standby server:
      - Check dashboard the ticket must be visible here!!.
