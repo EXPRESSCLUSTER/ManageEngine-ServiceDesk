@@ -94,7 +94,7 @@ Set up a basic cluster with Mirror Disk and FIP resources by following this guid
    - Ensure the database path modification (`set DB_HOME="E:\pgsql"`) is applied on the secondary server.
 
 4. **Failover Testing**
-   - Stop the ManageEngine service by running `shuwdown.bat` from `C:\Program Files\ManageEngine\ServiceDeskPlus-MSP\bin` on the primary server.
+   - Stop the ManageEngine service by running `shutdown.bat` from `C:\Program Files\ManageEngine\ServiceDeskPlus-MSP\bin` on the primary server.
    - Use Cluster Manager to failover the group from the primary server to the secondary server.
    - Start ManageEngine on the secondary server using `run.bat`.
    - Stop the service using `shutdown.bat`.
