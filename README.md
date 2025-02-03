@@ -6,7 +6,7 @@ Quick Start Guide for setting up high availability (HA) for ManageEngine Service
 ## Overview  
 This repository provides a step-by-step **Quick Start Guide (QSG)** for configuring **high availability (HA)** for **ManageEngine ServiceDesk Plus MSP** using **NEC EXPRESSCLUSTER X** on Windows servers.  
 
-By following this guide, you will be able to:  
+By following [this guide](ManageEngine%20with%20EXPRESSCLUSTER%20X-HA.md), you will be able to:    
 ✅ Install and configure ManageEngine ServiceDesk Plus MSP  
 ✅ Set up an EXPRESSCLUSTER-based high-availability cluster  
 ✅ Enable automatic failover and data replication  
