@@ -30,7 +30,7 @@ Follow the official installation guide: [ManageEngine Installation](https://help
 Follow the official installation guide: [EXPRESSCLUSTER Installation](https://docs.nec.co.jp/software/clustering/expresscluster_x/x52/ecx_x52_windows_en/W52_IG_EN/W_IG.html#installing-expresscluster)  
 
 ### 3️⃣ Configure the Cluster System  
-Set up a **2-node cluster** with **Mirror Disk** and **Failover IP (FIP)** by following:  
+Set up a **2-node cluster** with **Mirror Disk** and **Floating IP (FIP)** by following:  
 [Basic Cluster Setup](https://github.com/EXPRESSCLUSTER/BasicCluster/blob/master/X41/Win/2nodesMirror.md)  
 
 ### 4️⃣ Configure ManageEngine for High Availability  
@@ -70,10 +70,12 @@ Set up a **2-node cluster** with **Mirror Disk** and **Failover IP (FIP)** by fo
  |
 [Gateway]
  :
-📖 Documentation
+```
+
+📖 Documentation  
 For a detailed step-by-step guide, refer to the Quick Start Guide in this repository.
 
-🛠 Support
-For any issues or troubleshooting, refer to:
-🔹 EXPRESSCLUSTER Knowledge Base
+🛠 Support  
+For any issues or troubleshooting, refer to:  
+🔹 EXPRESSCLUSTER Knowledge Base  
 🔹 ManageEngine Support
